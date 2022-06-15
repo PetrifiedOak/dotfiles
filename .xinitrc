@@ -1,5 +1,7 @@
 #!/bin/sh
+dbus-launch
 sh ~/clock.sh &
 ~/.fehbg &
+dunst &
 pulseaudio --start &
-exec dbus-launch dwm
+exec ddwm
