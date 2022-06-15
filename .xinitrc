@@ -4,4 +4,4 @@ sh ~/clock.sh &
 ~/.fehbg &
 dunst &
 pulseaudio --start &
-exec ddwm
+exec dwm
