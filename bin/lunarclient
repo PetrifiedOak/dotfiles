@@ -1,0 +1,4 @@
+#!/bin/sh
+export $(dbus-launch) &&
+flatpak run com.lunarclient.LunarClient
+
