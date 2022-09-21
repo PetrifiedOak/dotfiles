@@ -1,0 +1,2 @@
+#!/bin/sh
+dbus-run-session flatpak run io.github.spacingbat3.webcord
