@@ -1,0 +1,19 @@
+export PATH="$HOME/.local/bin:/sbin/:/usr/sbin:/bin:/usr/bin:/usr/local/bin:/usr/local/bin"
+export XDG_DATA_DIRS="/home/oak/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share"
+PS1='\e[1m${PWD//$HOME/\~} \e[32m$\e[0m '
+HISTFILE=${XDG_CACHE_HOME:=$HOME/.cache}/yash_history
+HISTSIZE=8192
+
+alias apk='doas apk'
+alias vim='vis'
+alias ls='ls --color=auto'
+alias li='nsxiv'
+alias update="doas apk update && doas apk upgrade && flatpak update"
+alias btop="btop --utf-force"
+set -o emacs dotglob
+bindkey --emacs '\^L' clear-and-redraw-all
+
+figlet '$USER'
+date
+# made by wael
+
